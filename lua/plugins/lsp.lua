@@ -188,7 +188,7 @@ return {
             terraformls = {},
             jsonls = {},
             yamlls = {},
-
+            fsautocomplete = { filetypes = { 'fsharp' }, settings = { fsautocomplete = { autoStart = true } } },
             lua_ls = {
                 -- cmd = {...},
                 -- filetypes = { ...},
@@ -245,4 +245,3 @@ return {
         }
     end,
 }
-

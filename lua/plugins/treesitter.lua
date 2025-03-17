@@ -7,6 +7,8 @@ return { -- Highlight, edit, and navigate code
         ensure_installed = {
             'lua',
             'python',
+            'fsharp',
+            'ocaml',
             'javascript',
             'typescript',
             'vimdoc',
@@ -43,14 +45,6 @@ return { -- Highlight, edit, and navigate code
         },
         indent = { enable = true, disable = { 'ruby' } },
     },
-
-    {
-        'ap/vim-css-color',
-        ft = {
-            'html',
-            'htmldjango',
-        },
-    },
     -- There are additional nvim-treesitter modules that you can use to interact
     -- with nvim-treesitter. You should go explore a few and see what interests you:
     --
@@ -58,4 +52,3 @@ return { -- Highlight, edit, and navigate code
     --    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
     --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
 }
-

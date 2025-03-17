@@ -18,12 +18,16 @@ return {
                 'shfmt', -- Shell formatter
                 'checkmake', -- linter for Makefiles
                 'ruff', -- Python linter and formatter
+                'fantomas',
+                'ocamlformat',
             },
             automatic_installation = true,
         }
 
         local sources = {
             diagnostics.checkmake,
+            formatting.ocamlformat.with { filetypes = { 'ocaml' } },
+            formatting.fantomas.with { filetypes = { 'fsharp' }, timeout = 5000 },
             formatting.prettier.with { filetypes = { 'html', 'json', 'yaml', 'markdown' } },
             formatting.stylua,
             formatting.shfmt.with { args = { '-i', '4' } },
@@ -52,4 +56,3 @@ return {
         }
     end,
 }
-

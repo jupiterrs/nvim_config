@@ -93,4 +93,3 @@ function RunPython()
     -- Open a floating terminal and execute the Python file
     require('toggleterm').exec('python ' .. filepath, 1, 12, 'float')
 end
-
